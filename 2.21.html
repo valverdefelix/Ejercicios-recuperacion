@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie de Números 3, 6, 9, ...</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        #tabla {
+            margin-top: 20px;
+        }
+        #error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Regresar</a>
+    <div class="container">
+        <h1 class="mt-5">Serie de Números 3, 6, 9, ...</h1>
+        <form id="formulario" class="mt-3">
+            <div class="form-group">
+                <label for="numero">Ingrese un número límite (3 a 99):</label>
+                <input type="text" id="numero" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+            <div id="error"></div>
+        </form>
+        <div id="tabla"></div>
+    </div>
+
+    <script src="java/2.21.js"></script>
+</body>
+</html>
