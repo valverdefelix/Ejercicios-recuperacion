@@ -12,16 +12,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     let imprimir = (a, b, c, area) => {
-        let msg = "<table class='table table-bordered'><thead><th>Lado A</th><th>Lado B</th><th>Lado C</th><th>Área</th></thead>";
-        msg += "<tbody>";
-        msg += "<tr>";
-        msg += `<td>${a}</td>`;
-        msg += `<td>${b}</td>`;
-        msg += `<td>${c}</td>`;
-        msg += `<td>${area.toFixed(2)}</td>`;
-        msg += "</tr>";
-        msg += "</tbody></table>";
-        tabla.innerHTML = msg;
+        let fila = document.createElement("tr");
+        fila.innerHTML = `
+            <td>${a}</td>
+            <td>${b}</td>
+            <td>${c}</td>
+            <td>${area.toFixed(2)}</td>
+        `;
+        tabla.querySelector("tbody").appendChild(fila);
     }
 
     formulario.addEventListener("submit", (event) => {

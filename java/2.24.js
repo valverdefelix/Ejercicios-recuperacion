@@ -18,7 +18,7 @@ function contador() {
     msg += "<tbody>";
     for (let letra in contadorLetra) {
         let contador = contadorLetra[letra];
-        let contadorTexto = contador === 1 ? 'una' : contador === 2 ? 'dos' : contador === 3 ? 'tres' : contador;
+        let contadorTexto = contador === 1 ? '1' : contador === 2 ? '2' : contador === 3 ? '3' : contador;
         msg += `<tr><td>${letra}</td><td>${contadorTexto}</td></tr>`;
     }
     msg += "</tbody></table>";

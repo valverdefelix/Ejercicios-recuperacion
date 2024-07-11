@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área de Triángulo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <a href="index.html" class="btn btn-primary mb-3">Regresar</a>
+        <h1 class="text-center">Calculadora de Área de Triángulo</h1>
+        <div class="mt-4">
+            <table id="tabla" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Lado A</th>
+                        <th>Lado B</th>
+                        <th>Lado C</th>
+                        <th>Área</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <form id="formulario" class="mt-4">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ladoA">Lado A:</label>
+                    <input type="text" class="form-control" id="ladoA" placeholder="Ingrese el lado A">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="ladoB">Lado B:</label>
+                    <input type="text" class="form-control" id="ladoB" placeholder="Ingrese el lado B">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="ladoC">Lado C:</label>
+                    <input type="text" class="form-control" id="ladoC" placeholder="Ingrese el lado C"><br>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calcular Área</button>
+            <div id="error" class="text-danger mt-3"></div>
+        </form>
+    </div>
+
+    <script src="java/2.13.js"></script>
+</body>
+</html>
